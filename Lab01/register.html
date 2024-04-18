@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+</head>
+<body>
+    <h2>동아리 가입 양식</h2> 
+
+    <form>
+        <label for="username">이름<input type="text" id="username" name="username"></label>
+        <br>
+        <label for="majors">학부/학과</label>
+            <input list="majors">
+                <datalist id="majors">
+                    <option value="인공지능학과"></option>
+                    <option value="데이터사이언스학과"></option>
+                    <option value="컴퓨터과학과"></option>
+                </datalist>
+        <br>
+        <label for="grade">학년<input type="radio" id="1학년" name="grade" value="1학년">1학년</label>
+        <label for="grade"><input type="radio" id="2학년" name="grade" value="2학년">2학년</label>
+        <label for="grade"><input type="radio" id="3학년" name="grade" value="3학년">3학년</label>
+        <label for="grade"><input type="radio" id="4학년" name="grade" value="4학년">4학년</label>
+        <br>
+        <label for="student_id">학번<input type="text" id="student_id" name="student_id"></label>
+        <br>
+        <label for="user_email">이메일<input type="text" id="user_email" name="user_email" placeholder="sk@sookmyung.ac.kr"></label>
+        <br>
+        <label for="phone">전화번호</label>
+        <input type="tel" id="phone" name="phone" placeholder="010-1234-5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
+        <br>
+        <label for="motivation">가입 동기</label>
+        <textarea name="message" rows="3" clos="30"></textarea>
+        <br>
+        <input type="submit" value="가입하기">
+        <input type="reset" value="취소하기">
+    </form>
+    
+</body>
+</html>

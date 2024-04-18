@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>HTML + CSS 실습 5</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="flex-container">
+	<header id="top_header">
+        <hgroup id="title">
+            <h1>How was your day?🌻 </h1>
+            <p>Rais your head. Chin up.</p>
+        </hgroup>
+        <nav>
+			<ul id="navi">
+				<li><a href="#">Today's issue</a>
+					<ul>
+					<div class="submenu">
+					<li><a href="#">Global</a></li>
+					<li><a href="#">Internal</a></li>
+					</div>
+				  	</ul>
+				</li>
+				<li><a href="#">Weather</a>
+					<ul>
+					<div class="submenu">
+					<li><a href="#">day</a></li>
+					<li><a href="#">night</a></li>
+					</div>
+				  	</ul>
+				</li>
+				<li><a href="#">Task</a>
+				</li>
+				<li><a href="#">Special Moment</a>
+				</li>
+				
+			</ul>
+        </nav>
+    </header>
+	<div class="content">
+		<div class="left">
+		<aside id="login">
+			<form>
+				<label for="user">아이디</label>
+				<input type="text" id="user" size="15"><br>
+				<label for="pass">비밀번호</label>
+				<input type="password" id="pass" size="15"><br>
+				<input type="submit" value="로그인">
+				<input type="button" value="회원가입">
+			</form>			
+		</aside>
+		</div>
+		
+		<div class="center">
+		<section id="post">
+			<article>
+                <div class="card">
+                    <header>
+                      <h3>Happiness</h3>
+                    </header>
+                    <figure>
+                      <img src="happiness.jpg">
+                    </figure>
+                    <p>Articles about happiness and about attaining happiness.
+
+						“Try to make at least one person happy every day, and then in ten years you may have made three thousand, six hundred and fifty persons happy, or brightened a small town by your contribution to the fund of general enjoyment.”
+						– Sydney Smith
+						</p>
+                  </div> 
+			</article>
+			<article>
+                <div class="card">
+                    <header>
+                      <h3>Sadness</h3>
+                    </header>
+                    <figure>
+                      <img src="Sadness.jpg">
+                    </figure>
+                    <p>We use different words to talk about sadness: agony, anguish, broken heart, hurt, sorrow, dejection, dismay and more. All these emotions can occur in response to a negative or unexpected situations, or life changes.
+
+						Sadness often occurs at the same time as other feelings.Sometimes, you don’t realise you are sad.But recognising your sadness, and understanding that it is okay to feel sad, is a sign of a stable sense of wellbeing.</p>
+                </div> 
+            </article>
+			<article>
+                <div class="card">
+                    <header>
+                      <h3>The Sharing Effect</h3>
+                    </header>
+                    <figure>
+                      <img src="treatment.jpg">
+                    </figure>
+                    <p>The results from this study may help explain why friends seek each other out in emotional situations, regardless of whether the situation is sad—like attending a funeral—or happy, like celebrating a promotion. As the authors write, “Sharing exposure to emotional stimuli with a friend buffers the impact of negative stimuli and enhances the impact of positive stimuli.”</p>
+                </div> 
+			</article>
+		</div>
+		</section>
+
+		<div class="right">
+		<aside id="ad">
+			<article>
+				<p>숙명여자대학교</p>
+				<p><img src="sm_logo.png" width="170"></p>
+				<p>컴퓨터과학과<br>웹시스템설계</p>
+			</article>
+			<article>
+				<p>ABC 쇼핑몰</p>
+				<p><img src="http://placehold.it/170x60"></p>
+				<p>10% 할인 이벤트<br>	무료 배송</p>
+			</article>
+		</aside>
+		</div>
+	</div>	
+	<div class ="footer">
+		<nav id="foot">
+			<ul>
+				<li><a href="#">회사 소개</a></li>
+				<li><a href="#">대표이사 인사말</a></li>
+				<li><a href="#">오시는 길</a></li>
+				<li><a href="#">광고주를 모집합니다.</a></li>
+			</ul>
+		</nav>	
+	</div>
+</div>
+</body>
+</html>
