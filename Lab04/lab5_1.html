@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 실습</title>
+</head>
+<body>
+   <script>
+    let score = prompt("점수를 입력하세요");
+
+    function grade(score){
+
+        if(score >= 90){
+            score = 'A';
+        }
+        else if(score >= 80){
+            score = 'B';
+        }
+        else if(score >= 70){
+            score = 'C';
+        }
+        else if(score >= 60){
+            score = 'D';
+        }
+        else{
+            score='F'
+        }
+        return score;
+    }
+
+    document.write("<h1>입력한 점수 "+score+"는 "+grade(score)+"학점입니다");
+   </script>
+
+    
+</body>
+</html>

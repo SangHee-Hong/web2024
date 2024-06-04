@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카운트다운 타이머 만들기</title>
+</head>
+<body>
+
+    <div id="demo"></div>
+    <script>
+        let num = prompt("카운트다운할 숫자를 입력하세요.");
+
+        function myFunction(){
+            document.getElementById("demo").innerHTML = "<h1>"+ num;
+            num -= 1;
+            
+            if (num < 0){
+                document.getElementById("demo").innerHTML="<h1>타이머종료";
+                clearInterval(x);
+            }
+
+            return num
+        }
+
+        const x = setInterval(myFunction, 1000);
+
+    </script>
+    
+</body>
+</html>
