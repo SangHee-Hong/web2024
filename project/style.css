@@ -1,4 +1,18 @@
-.flex-container{
+* {
+
+    font-family: "Noto Serif KR", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    
+      
+}
+
+a {
+    text-decoration: none !important;  /* 링크 텍스트의 밑줄 제거 */
+}
+
+.flex-container {
     width: 1200px;
     padding: 30px;
     margin: 30px;
@@ -13,7 +27,7 @@
     padding: 15px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(80, 141, 109);
+    background-color: rgb(251, 243, 243);
     align-items: center;
     justify-content: center;
     position: relative;
@@ -32,14 +46,12 @@
 
 .btn {
     padding: 5px 10px;
-    background-color: #e0e0e0;
+    background-color: #f5f5f5;
     border: none;
     cursor: pointer;
 }
 
-
-
-#navi{
+#navi {
     margin: 0 auto;
     width: 1100px;
     display: flex;
@@ -47,30 +59,28 @@
     justify-content: space-around;
     font-size: 19px;
     font-weight: bold;
-    
 }
 
-#navi > li{
+#navi > li {
     width: 100%;
     text-align: center;
     line-height: 40px;
-    background-color: rgb(80, 141, 109);;
+    background-color: rgb(251, 243, 243);
     align-items: flex-end;
     position: relative;
     bottom: 0;
 }
 
-#navi a{
-    color: black;
+#navi a {
+    color: rgb(198, 81, 81);
 }
 
-#navi >li:hover{
-    background-color: #7fe9b6;
-
+#navi > li:hover {
+    background-color: #ffcccc;
 }
 
-#navi >li:hover a{
-    color: rgb(37, 125, 169);
+#navi > li:hover a {
+    color: rgb(255, 96, 96);
 }
 
 .submenu {
@@ -78,58 +88,46 @@
     top: 100%;
     left: 0;
     width: 100%;
-    visibility: hidden; 
-    
+    visibility: hidden;
+    background-color: rgb(252, 222, 222);
 }
 
-#navi >li:hover .submenu{
+#navi > li:hover .submenu {
     visibility: visible;
-    background-color: rgb(181, 213, 196);
 }
 
-#navi >li:hover .submenu a{
-    visibility: visible;
-    background-color: rgb(181, 213, 196);
-    color: green;
+#navi > li:hover .submenu a {
+    color: rgb(225, 89, 89);
 }
 
-
-li{
+li {
     list-style: none;
 }
-.content{
+
+.content {
     height: 800px;
     display: flex;
     flex-direction: row;
-    margin-bottom:5px;
-    background-color:rgb(246, 246, 246);
-    justify-content:center;
+    margin-bottom: 5px;
+    background-color: rgb(246, 246, 246);
+    justify-content: center;
 }
 
-h3{
+h3 {
     margin-left: 5px;
     font-size: 25px;
 }
+
 .footer ul {
-    background-color: rgb(80, 141, 109);
+    background-color: rgb(251, 243, 243);
     margin-top: 0px;
-    padding:10px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-size: 17px;
-    
-   
 }
 
-#foot a{
-    color: white;
+#foot a {
+    color: rgb(189, 61, 61);
 }
-
-
-
-
-
-
-
-
