@@ -115,8 +115,9 @@ li {
     align-items: center;
 }
 
-.content h3{
+.content h3, h4{
     background-color: #f2acac;
+    text-align: center;
 }
 .profile_pic{
     margin-right: 50px;
@@ -132,6 +133,9 @@ li {
 }
 .profile_text section{
     margin-bottom: 50px;
+}
+.location_info{
+    margin-right: 60px;
 }
 h3 {
     margin-left: 5px;

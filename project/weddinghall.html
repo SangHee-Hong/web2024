@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
+    <script type="text/javascript"src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=amgz76cnot"></script>
 	</head>
 <body>
 <div class="flex-container">
@@ -56,26 +57,31 @@
         </nav>
     </header>
 	<div class="content">
-        <div class="profile_pic">
-            <img src="img/리트리버.jpg"/>
+        <div class="location_info">
+            <h4> 오시는 길    </h4>
+            <p style="font-size: 16px;"><br>국방컨벤션 1층, 에메랄드홀</p>
+            <p style="font: 16px;">주소: 서울시 용산구 용산동 3가 1번지 이태원로 22</p>
+            <p> 위치 안내 : 삼각지역 1번 출구에서 500m, 삼각지역 13번 출구 400m<p>
+            <p>대중교통: 지하철 6호선, 4호선 삼각지역 / 전쟁기념관역 - 용산 3<br><br></p>  
+            
+            <h4> 뷔페 안내</h4>
+            <p><br>국방컨벤션 3층, 충무관<br><br>
+                <img src="img/국방컨벤션.jpg" width="300"><p>   
         </div>
-        <div class="profile_text">
-			<section>
-				<h3>ABOUT ME</h3>
-				<p><멋쟁이 군인></p>
-				<ul>
-					<li>이름: 김아무개 </li>
-					<li>나이: 25</li>
-					<li>직업: 멋지고 튼튼한 군인</li>
-					<li>MBTI: INTP</li>
-					<li>가족: (부)아버님 (모)어머님 </li>
-				</ul>
-			</section>
-			<section>
-				<h3>오신분들께 전하고싶은 말씀</h3>
-				<p> <br>저희 결혼식에 오셔 자리를 빛내주신다면 진심으로 감사하겠습니다. 모든 분들께서 격려해주신 덕분에 무사히 결혼식을 진행할 수 있게되었습니다. 저희들에게 평생 잊지 못할 소중한 날을 함께 해 주신 깊은 배려 잊지 않겠습니다. 바쁘신 경황으로 오지 못하셨더라도 마음으로 보내주신 격려에 깊은 감사드립니다. 늘 건강하시고, 가정에 행복이 가득하시기를 진심으로 기원합니다.
-			</section>
+        <div id="map" style="width:500px; height: 500px;">
         </div>
+        <script>
+            var mapOptions = {
+                center: new naver.maps.LatLng(37.5344762,126.9784692),
+                zoom: 15
+            };
+
+            var map = new naver.maps.Map('map', mapOptions);
+
+            var marker = new naver.maps.Marker({
+            position: new naver.maps.LatLng(37.5344762,126.9784692),map:map });
+        </script>
+
 	</div>	
 	<div class ="footer">
 		<nav id="foot">
