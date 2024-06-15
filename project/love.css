@@ -107,6 +107,7 @@ li {
 
 .content {
     width: 1140px;
+    height: 750px;
     padding: 50px;
     background-color: rgb(246, 246, 246);
     display: flex;
@@ -144,14 +145,35 @@ figure {
 #fstory,
 #finale {
     opacity: 0;
-    transform: translateY(50px); /* 초기에 숨겨진 상태로 이동 효과 */
+    transform: translateY(50px);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 #fstory.show,
 #finale.show {
     opacity: 1;
-    transform: translateY(0); /* show 클래스 추가 시 나타나는 애니메이션 */
+    transform: translateY(0);
+}
+
+.fpic, .spic{
+    display: flex;
+    margin-left: 0px;
+}
+
+.fpic img{
+    margin-right: 140px;
+    width: 250px;
+    transition: opacity 0.5s ease-in-out;
+    cursor: pointer;
+}
+.spic img{
+    margin-top: 30px;
+    margin-right: 130px;
+    transition: opacity 0.5s ease-in-out;
+    cursor: pointer;
+}
+.fpic img:hover, .spic img:hover {
+    opacity: 1;
 }
 
 .footer ul {

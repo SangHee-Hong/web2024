@@ -56,7 +56,23 @@
         </nav>
     </header>
 	<div class="content">
-	</div>	
+		<div class="fpic" id="fpic">
+			<img src="img/웨딩사진1.png" onclick="openImage('img/웨딩사진1.png')">
+			<img src="img/웨딩사진2.png" onclick="openImage('img/웨딩사진2.png')">
+			<img src="img/웨딩사진3.png" onclick="openImage('img/웨딩사진3.png')">
+		</div>
+		<div class="spic" id="spic">
+			<img src="img/웨딩사진4.png" width="320" height="280" onclick="openImage('img/웨딩사진4.png')">
+			<img src="img/웨딩사진5.png" width="222" height="350" onclick="openImage('img/웨딩사진5.png')">
+			<img src="img/웨딩사진6.png" width="180" height="350" onclick="openImage('img/웨딩사진6.png')">
+		</div>
+	</div>
+	<script>
+		function openImage(imageSrc) {
+    		// 새 창 열기
+    	window.open(imageSrc, 'popup', 'width=500, height=400, left=600, top=300');}
+	</script>
+
 	<div class ="footer">
 		<nav id="foot">
 			<ul>
