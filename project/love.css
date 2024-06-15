@@ -1,0 +1,169 @@
+* {
+
+    font-family: "Noto Serif KR", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    
+      
+}
+
+a {
+    text-decoration: none !important;  /* 링크 텍스트의 밑줄 제거 */
+}
+
+.flex-container {
+    width: 1200px;
+    padding: 30px;
+    margin: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 10px rgb(49, 133, 77);
+    display: flex;
+    flex-direction: column;
+}
+
+#top_header {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(251, 243, 243);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1000;
+}
+
+#title {
+    flex-grow: 1;
+    text-align: center;
+}
+
+#login {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+.btn {
+    padding: 5px 10px;
+    background-color: #f5f5f5;
+    border: none;
+    cursor: pointer;
+}
+
+#navi {
+    margin: 0 auto;
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#navi > li {
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgb(251, 243, 243);
+    align-items: flex-end;
+    position: relative;
+    bottom: 0;
+}
+
+#navi a {
+    color: rgb(198, 81, 81);
+}
+
+#navi > li:hover {
+    background-color: #ffcccc;
+}
+
+#navi > li:hover a {
+    color: rgb(255, 96, 96);
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+    background-color: rgb(252, 222, 222);
+}
+
+#navi > li:hover .submenu {
+    visibility: visible;
+}
+
+#navi > li:hover .submenu a {
+    color: rgb(225, 89, 89);
+}
+
+li {
+    list-style: none;
+}
+
+.content {
+    width: 1140px;
+    padding: 50px;
+    background-color: rgb(246, 246, 246);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-content {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-content p{
+    flex: 1 40%; /* Adjust flex-basis for 60% */
+    margin-right: 60px;
+}
+
+figure {
+    flex: 1 1 40%; /* Adjust flex-basis for 40% */
+    margin-left: auto;
+}
+
+.content h5{
+    background-color: #f2acac;
+    text-align: center;
+}
+
+#fstory,
+#finale {
+    opacity: 0;
+    transform: translateY(50px); /* 초기에 숨겨진 상태로 이동 효과 */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+#fstory.show,
+#finale.show {
+    opacity: 1;
+    transform: translateY(0); /* show 클래스 추가 시 나타나는 애니메이션 */
+}
+
+.footer ul {
+    background-color: rgb(251, 243, 243);
+    margin-top: 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 17px;
+}
+
+#foot a {
+    color: rgb(189, 61, 61);
+}

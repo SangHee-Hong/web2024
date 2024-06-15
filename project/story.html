@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>HTML + CSS 실습 5</title>
+	<link rel="stylesheet" href="love.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
+	</head>
+	<
+<body>
+<div class="flex-container">
+	<header id="top_header">
+        <hgroup id="title">
+            <h1> Kim 🩷 Hong </h1>
+		</hgroup>	
+		<div id="login">
+			<button type="button" onclick="location.href='login.html'" class="btn btn-light">Administrator</button>
+		</div>	
+        <nav>
+			<ul id="navi">
+				<li><a href="home.html">Home</a>
+				</li>
+				<li><a href="#">Profile</a>
+					<ul>
+					<div class="submenu">
+					<li><a href="profile1.html">신랑</a></li>
+					<li><a href="profile2.html">신부</a></li>
+					</div>
+				  	</ul>
+				</li>
+				<li><a href="#">Wedding</a>
+					<ul>
+					<div class="submenu">
+					<li><a href="weddinghall.html">웨딩홀 안내</a></li>
+					<li><a href="program_info.html">식순</a></li>
+					</div>
+					</ul>
+				</li>
+				<li><a href="story.html">Love Story</a>
+				</li>
+				<li><a href="gallery.html">Gallery</a>
+				</li>
+				<li><a href="#">Contact</a>
+					<ul>
+					<div class="submenu">
+					<li><a href="comment.html">기대평 남기기</a></li>
+					<li><a href="contact.html">연락</a></li>
+					</div>
+		     		</ul>
+				</li>
+				
+			</ul>
+        </nav>
+    </header>
+	<div class="content">
+		<section id="fstory">
+			<article>
+				<div class="card">
+					<header><h5><우리의 첫만남></header>
+					<div class="card-content">
+						<p>대학시절 멋모르고 나간 미팅에서 처음 만났습니다. 당시 24살이고 21살이였습니다. 초봄, 선선한 바람이 부는 홍대 한복판에서 짧은 시간동안 참 많은 이야기를 나눴습니다. 그 후 4번째 만남을 가지던 날, 중간고사 첫시험 전날 공부를 마치고 간 한강공원에서 저희는 만남을 약속하였습니다.</p>
+						<figure>
+							<img src="img/잠원한강공원.jpg" width=350px>
+						</figure>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section id="finale" class="hidden">
+			<article>
+				<div class="card">
+					<header><h5><결전의 날.. 프러포즈></header>
+					<div class="card-content">
+						<p>&nbsp;&nbsp;"-당신에게 기쁜 일이 생겼을때 가장 먼저 축하해주고 싶고, 당신에게 슬픈 일이 생겼을때 당신이 기댈 수 있는 가장 편안한 품이 되었으면 해. 앞으로도 당신과 모든 순간을 함께하고 싶어. 당신과 함께 늙어가고 싶어. 당신과 함께라면 어떤 어려움도 이겨내고 앞으로 나아갈 수 있을 것 같아. 너가 알려준 사랑 평생 하고싶어. 나와 결혼해줄래..?-"</p>
+						<figure>
+							<video src="img/프로포즈영상sample.mp4" controls autoplay width="400px">
+						</figure>
+					</div>
+				</div>
+			</article>
+		</section>
+	</div>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+    	document.getElementById("fstory").classList.add("hidden");
+
+    	setTimeout(function() {
+        document.getElementById("fstory").classList.remove("hidden");
+        document.getElementById("fstory").classList.add("show");}, 300); 
+    	setTimeout(function() {
+        document.getElementById("finale").classList.remove("hidden");
+        document.getElementById("finale").classList.add("show");}, 2000); });
+	</script>
+	<div class ="footer">
+		<nav id="foot">
+			<ul>
+				<li><a href="#">홍상희</a></li>
+				<li><a href="#">숙명여자대학교</a></li>
+				<li><a href="#">웹시스템 설계</a></li>
+				<li><a href="#"> github</a></li>
+			</ul>
+		</nav>	
+	</div>
+</div>
+</body>
+</html>
