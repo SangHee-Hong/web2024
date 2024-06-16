@@ -57,19 +57,49 @@
     </header>
 	<div class="content">
         <div class="title">
-            <head><h4>예비 부부에게 축하메시지를 전달해주세요!</h4></head>
+            <h4>예비 부부에게 축하메시지를 전달해주세요!</h4>
         </div>
         <div class="form-floating">
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
             <label for="floatingTextarea">Comments</label>
+            <div class="button-container">
+                <button type="button" class="btn btn-outline-danger" id="submitBtn" disabled>등록하기</button>
+            </div>
         </div>
+        
         <div class="comment" id="comment">
             <p>결혼 축하합니다. 오래오래 행복하게 사세요~<hr></p>
             <p>사랑하는 내동생 서로에게 빛나는 보석이 될 수 있기를 기도할게. 진심으로 축하하고 사랑한다. 알콩달콩 이쁘게 잘살아<hr></p>
             <p>행복한 너의 얼굴을 보니 나도 같이 행복해지는 것 같아.<br> 사랑이 사람을 얼마나 변하게 하는지 널 보면서 다시한번 실감하고 있어 세상에서 가장 행복한 신랑 신부가 되길 바래!<hr></p>
             <p>특별한 청첩장이네요! 두분 결혼 축하드리고 행복하게 사세요<hr></p>
+            <p>드디어 가네!! ⭐결혼 축하⭐한다!!!!<hr></p>
 
         </div>
+        
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const textarea = document.getElementById("floatingTextarea");
+        const submitBtn = document.getElementById("submitBtn");
+        const commentDiv = document.getElementById("comment");
+
+        textarea.addEventListener("input", function() {
+            if (textarea.value.trim() !== "") {
+                submitBtn.disabled = false;
+            } else {
+                submitBtn.disabled = true;
+            }
+        });
+
+        submitBtn.addEventListener("click", function() {
+            const newComment = document.createElement("p");
+            newComment.innerHTML = `${textarea.value.trim()}<span class="badge rounded-pill bg-primary">New</span><hr>`;
+            commentDiv.insertBefore(newComment, commentDiv.firstChild);
+            textarea.value = "";
+            submitBtn.disabled = true;});
+        });
+
+    </script>
 
 	</div>	
 	<div class ="footer">
