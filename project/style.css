@@ -157,7 +157,25 @@ h3 {
     margin-left: 5px;
     font-size: 25px;
 }
+.bride{
+    margin-left: 100px;
+}
 
+.contact-img img{
+    width: 200px;
+    margin-left: 50px;
+}
+.contact-info{
+    margin-top: 20px;
+}
+.gift-list img{
+    margin-left:25px;
+    width:125px;
+}
+
+.btn{
+    margin-left: 82px;
+}
 .footer ul {
     background-color: rgb(251, 243, 243);
     margin-top: 0px;
