@@ -137,7 +137,7 @@ figure {
     margin-left: auto;
 }
 
-.content h5{
+.content h5,h4{
     background-color: #f2acac;
     text-align: center;
 }
