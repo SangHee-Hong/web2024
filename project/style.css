@@ -9,7 +9,17 @@
 }
 
 a {
-    text-decoration: none !important;  /* 링크 텍스트의 밑줄 제거 */
+    text-decoration: none !important; 
+}
+
+#navi {
+    position: relative; 
+    z-index: 1000; 
+}
+
+.carousel {
+    position: relative; 
+    z-index: 500; 
 }
 
 .flex-container {
@@ -148,7 +158,7 @@ li {
     border-radius: 10px;
 }
 .program ul:first-child {
-    margin-top: 15px; /* 원하는 여백 크기로 조정 */
+    margin-top: 15px; 
 }
 .program ul li:hover{
     color: rgb(198, 81, 81);
@@ -176,6 +186,32 @@ h3 {
 .btn{
     margin-left: 82px;
 }
+
+.reservation > .btn{
+    margin-right:10px;
+}
+
+.gift-list {
+    text-align: center; 
+}
+
+.gift-item {
+    display: inline-block;
+    text-align: center;
+    margin: 20px; 
+}
+
+.gift-item img {
+    display: block;
+    margin: 0 auto;
+    width: 125px; 
+}
+
+.gift-item .btn {
+    display: block;
+    margin: 10px auto 0;
+}
+
 .footer ul {
     background-color: rgb(251, 243, 243);
     margin-top: 0px;
