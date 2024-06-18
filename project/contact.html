@@ -71,22 +71,23 @@
             </div>
             <div button type="button" class="btn btn-outline-dark btn-lg" id="gaccount" >계좌 송금하기</button></div>
 
-			<div class="modal" id="myModal" tabindex="-1">
+			<div class="modal" id="groomModal" tabindex="-1">
 				<div class="modal-dialog modal-dialog-centered">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title">김아무개 계좌</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">김아무개 계좌</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<p>KB국민: XXXXXX-XX-XXXXXX</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						</div>
 					</div>
-					<div class="modal-body">
-					  <p>KB국민: XXXXXX-XX-XXXXXX</p>
-					</div>
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					</div>
-				  </div>
 				</div>
-			  </div>
+			</div>
+			
 
 
             <div class="gift-list" id="gift-list">
@@ -115,22 +116,22 @@
             </div>
             <div button type="button" class="btn btn-outline-dark btn-lg" id="baccount">계좌 송금하기</button></div>
 
-			<div class="modal" id="myModal" tabindex="-1">
+			<div class="modal" id="brideModal" tabindex="-1">
 				<div class="modal-dialog modal-dialog-centered">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title">홍상희 계좌</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">홍상희 계좌</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<p>KB국민: XXXXXX-XX-XXXXXX</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						</div>
 					</div>
-					<div class="modal-body">
-					  <p>KB국민: XXXXXX-XX-XXXXXX</p>
-					</div>
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					</div>
-				  </div>
 				</div>
-			  </div>
+			</div>			
 
             <div class="gift-list" id="gift-list">
 				<p><hr>선물 예약하기</p>
@@ -196,18 +197,19 @@
     }
     return null;}
 	
-    function showModal() {
-      var myModal = new bootstrap.Modal(document.getElementById('myModal'));
-      myModal.show();
+	function showGroomModal() {
+		var groomModal = new bootstrap.Modal(document.getElementById('groomModal'));
+		groomModal.show();
+	}
 
-      var myInput = document.getElementById('myInput');
-      document.getElementById('myModal').addEventListener('shown.bs.modal', function () {
-        myInput.focus();
-      });
-    }
+	function showBrideModal() {
+		var brideModal = new bootstrap.Modal(document.getElementById('brideModal'));
+		brideModal.show();
+	}
 
-    document.getElementById('gaccount').addEventListener('click', showModal);
-    document.getElementById('baccount').addEventListener('click', showModal);
+	document.getElementById('gaccount').addEventListener('click', showGroomModal);
+	document.getElementById('baccount').addEventListener('click', showBrideModal);
+
 
 
 </script>
