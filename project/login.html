@@ -93,13 +93,9 @@
         window.onload = function() {
             const rememberedId = getCookie('login_id');
             const rememberMeChecked = getCookie('remember_me');
-            if (rememberMeChecked==='true') {
-                if(rememberedId){
-                    document.getElementById('login_id').value = rememberedId;
-                    document.getElementById('remember_me').checked = true;
-                } else{
-                    document.getElementById('login)id').value= ' ';
-                }
+            if (rememberedId && rememberMeChecked) {
+                document.getElementById('login_id').value = rememberedId;
+                document.getElementById('remember_me').checked = true;
             }
 
             const role = getCookie('role');
@@ -115,7 +111,6 @@
             } else {
             }
         };
-
 
     </script>
 </body>
