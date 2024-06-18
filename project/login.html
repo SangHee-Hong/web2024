@@ -93,9 +93,13 @@
         window.onload = function() {
             const rememberedId = getCookie('login_id');
             const rememberMeChecked = getCookie('remember_me');
-            if (rememberedId && rememberMeChecked) {
-                document.getElementById('login_id').value = rememberedId;
-                document.getElementById('remember_me').checked = true;
+            if (rememberMeChecked==='true') {
+                if(rememberedId){
+                    document.getElementById('login_id').value = rememberedId;
+                    document.getElementById('remember_me').checked = true;
+                } else{
+                    document.getElementById('login)id').value= ' ';
+                }
             }
 
             const role = getCookie('role');
